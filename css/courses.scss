@@ -1,0 +1,82 @@
+$blue-1: #d8c3a4;
+$blue-2: #8e8d89;
+$blue-3: #e88073;
+$light-1: #c1c8e4;
+$light-2: rgba(255, 255, 255, 0.15);
+$light-3: #dbdbdb;
+$purple: #e85a50;
+$dark: #202020;
+
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(45deg, $blue-2, $blue-3, $purple, $blue-1);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  color: $dark;
+}
+
+.courses {
+  .container {
+    margin: 2rem 0;
+    background: $light-2;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    border-left: 1px solid $light-1;
+    border-top: 1px solid $light-1;
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+    max-height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+    nav {
+      margin-bottom: 3rem;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      .course {
+        width: calc(50% - 2rem);
+        margin: 0 1rem;
+        background: $light-2;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        border-left: 1px solid $light-1;
+        border-top: 1px solid $light-1;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        box-sizing: border-box;
+
+        video {
+          width: 100%;
+          border-radius: 0.25rem;
+        }
+      }
+
+      @media screen and(max-width: 1024px) {
+        flex-direction: column;
+        width: 100%;
+
+        .course {
+          width: 100%;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #8e8d89, #e88073, #e85a50, #d8c3a4);
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  color: #202020;
+}
+
+.courses .container {
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-left: 1px solid #c1c8e4;
+  border-top: 1px solid #c1c8e4;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.courses .container nav {
+  margin-bottom: 3rem;
+}
+
+.courses .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.courses .container .content .course {
+  width: calc(50% - 2rem);
+  margin: 0 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-left: 1px solid #c1c8e4;
+  border-top: 1px solid #c1c8e4;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.courses .container .content .course video {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .courses .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .courses .container .content .course {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+/*# sourceMappingURL=courses.css.map */
